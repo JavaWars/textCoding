@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/BCtYyl0Ykgw.jpg</file>
+        <file>res/reflector.txt</file>
+        <file>res/rotors.txt</file>
+    </qresource>
+</RCC>
