@@ -3,5 +3,8 @@
         <file>img/BCtYyl0Ykgw.jpg</file>
         <file>res/reflector.txt</file>
         <file>res/rotors.txt</file>
+        <file>img/cezar.png</file>
+        <file>img/binary.png</file>
+        <file>img/enigma.png</file>
     </qresource>
 </RCC>

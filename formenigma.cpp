@@ -8,6 +8,16 @@ FormEnigma::FormEnigma(QWidget *parent) :
     ui->setupUi(this);
     enigma=new Enigma();
     clearSettings();
+
+    //test setting
+    ui->FilePath_LE->setText("C:/Users/Pavel/Desktop/test enigma.txt");
+    ui->RotorStartPos3_CB->setCurrentIndex(2);
+    ui->RotorStartPos2_CB->setCurrentIndex(21);
+    ui->RotorStartPos1_CB->setCurrentIndex(16);
+
+    ui->RotorSetting1_CB->setCurrentIndex(0);
+    ui->RotorSetting2_CB->setCurrentIndex(1);
+    ui->RotorSetting3_CB->setCurrentIndex(2);
 }
 
 FormEnigma::~FormEnigma()
@@ -39,14 +49,16 @@ void FormEnigma::on_OpenFile_PB_clicked()
 void FormEnigma::on_SHIFR_PB_clicked()
 {
     QChar A('A');
-    enigma->SetKey(ui->RotorSetting1_CB->currentText().toInt(),
-                   ui->RotorSetting2_CB->currentText().toInt(),
-                   ui->RotorSetting3_CB->currentText().toInt(),
-                   ui->ReflectorSetting_CB->currentText()[0].unicode()-A.unicode()+1);
+    enigma->SetKey(ui->RotorSetting1_CB->currentText().toInt()-1,
+                   ui->RotorSetting2_CB->currentText().toInt()-1,
+                   ui->RotorSetting3_CB->currentText().toInt()-1,
+                   ui->ReflectorSetting_CB->currentText()[0]);
 
-    enigma->SetRotorsStartPos(ui->RotorStartPos1_CB->currentText()[1].unicode()-A.unicode(),
-                              ui->RotorStartPos2_CB->currentText()[1].unicode()-A.unicode(),
-                              ui->RotorStartPos3_CB->currentText()[1].unicode()-A.unicode());
+
+    enigma->SetRotorsStartPos(ui->RotorStartPos1_CB->currentText()[0].unicode()-A.unicode()+1,
+                              ui->RotorStartPos2_CB->currentText()[0].unicode()-A.unicode()+1,
+                              ui->RotorStartPos3_CB->currentText()[0].unicode()-A.unicode()+1);
+    qDebug()<<ui->RotorStartPos3_CB->currentText()[0].unicode()-A.unicode();
 
     QString inputFileName=ui->FilePath_LE->text();
     QString outputFileName=inputFileName;

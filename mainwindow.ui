@@ -73,7 +73,7 @@
   <action name="action">
    <property name="icon">
     <iconset resource="res.qrc">
-     <normaloff>:/img/BCtYyl0Ykgw.jpg</normaloff>:/img/BCtYyl0Ykgw.jpg</iconset>
+     <normaloff>:/img/cezar.png</normaloff>:/img/cezar.png</iconset>
    </property>
    <property name="text">
     <string>шифр цезаря</string>
@@ -82,7 +82,7 @@
   <action name="action_2">
    <property name="icon">
     <iconset resource="res.qrc">
-     <normaloff>:/img/BCtYyl0Ykgw.jpg</normaloff>:/img/BCtYyl0Ykgw.jpg</iconset>
+     <normaloff>:/img/enigma.png</normaloff>:/img/enigma.png</iconset>
    </property>
    <property name="text">
     <string>энигма</string>
@@ -90,11 +90,11 @@
   </action>
   <action name="action_3">
    <property name="icon">
-    <iconset>
-     <normaloff>img/BCtYyl0Ykgw.jpg</normaloff>img/BCtYyl0Ykgw.jpg</iconset>
+    <iconset resource="res.qrc">
+     <normaloff>:/img/binary.png</normaloff>:/img/binary.png</iconset>
    </property>
    <property name="text">
-    <string>метод3</string>
+    <string>RSA</string>
    </property>
   </action>
  </widget>

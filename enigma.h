@@ -46,11 +46,15 @@ private:
     void ReadRotorReflectorConstDataFromFile();
     void SubChars(QChar ch1,QChar ch2);
     bool isSettingsCorrect();
-    QChar GetNextLetterFromRotor(int _rotorNum, QChar _letter);
+    QChar GetNextLetterFromRotor(int _rotorNum, QChar _letter,bool reverse=false);
     QChar GetNextLetterFromReflector(int _reflectorNum,QChar _letter);
     void printKeyAndCurrentState();
 
     QChar ShifrChar(QChar ch);
+    int getLetterPosition(QChar ch);
+    int unicodeLetterWithPosition(int pos);
+    int makeNormal(int charPosition);
+    void makeStep();
 };
 
 #endif // ENIGMA_H
