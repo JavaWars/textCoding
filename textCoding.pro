@@ -37,4 +37,4 @@ FORMS    += mainwindow.ui \
 RESOURCES += \
     res.qrc
 
-RC_ICONS = icon.ico
+RC_ICONS = cezar.ico

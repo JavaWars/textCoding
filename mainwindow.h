@@ -30,8 +30,6 @@ private:
     FormCezar *cezarForm;
     FormEnigma * enigmaForm;
     FormWithPublicKey *pubKeyForm;
-
-
 };
 
 #endif // MAINWINDOW_H

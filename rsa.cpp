@@ -139,6 +139,16 @@ void Rsa::RsaUnshifrFile(QString _fileName,QString _outputFileName)
     }
 }
 
+int Rsa::getN()
+{
+    return n;
+}
+
+int Rsa::getD()
+{
+    return d;
+}
+
 void Rsa::CreateKey()
 {
     qDebug()<<"Please wait... Key generation procces.\n";

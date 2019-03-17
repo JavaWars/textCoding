@@ -6,5 +6,7 @@
         <file>img/cezar.png</file>
         <file>img/binary.png</file>
         <file>img/enigma.png</file>
+        <file>img/enigma_rotor.png</file>
+        <file>img/enigma_rotor2.png</file>
     </qresource>
 </RCC>

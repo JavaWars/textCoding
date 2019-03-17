@@ -10,7 +10,7 @@ FormEnigma::FormEnigma(QWidget *parent) :
     clearSettings();
 
     //test setting
-    ui->FilePath_LE->setText("C:/Users/Pavel/Desktop/test enigma.txt");
+    //ui->FilePath_LE->setText("C:/Users/Pavel/Desktop/test enigma.txt");
     ui->RotorStartPos3_CB->setCurrentIndex(2);
     ui->RotorStartPos2_CB->setCurrentIndex(21);
     ui->RotorStartPos1_CB->setCurrentIndex(16);
@@ -62,7 +62,7 @@ void FormEnigma::on_SHIFR_PB_clicked()
 
     QString inputFileName=ui->FilePath_LE->text();
     QString outputFileName=inputFileName;
-    outputFileName.insert(outputFileName.size()-4,"Shifred");
+    outputFileName.insert(outputFileName.size()-4,"new");
     enigma->Shifr(inputFileName,outputFileName);
 
 }

@@ -22,6 +22,10 @@ public:
 
     void RsaShifrFile(QString _inputFileName,QString _outputFileName);
     void RsaUnshifrFile(QString _fileName,QString _outputFileName);
+
+    int getD();
+    int getN();
+    //void setKey(int _n,int _d);
 };
 
 #endif // RSA_H

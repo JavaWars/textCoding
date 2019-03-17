@@ -296,7 +296,6 @@ Rotor *CreateRotor(QString _rotorParam)
     int step=0;
     while (!stringList.empty())
     {
-        //qDebug()<<stringList.at(0);
         if (step==0)
         {
             result->name=stringList.at(0);
@@ -306,7 +305,6 @@ Rotor *CreateRotor(QString _rotorParam)
             QPair <QChar,QChar> *pair=new QPair<QChar,QChar>;
             pair->first=QChar(A.toLatin1()+step-1);
             pair->second=stringList.at(0)[0];
-            //qDebug()<<QChar(A.toLatin1()+step-1)<<" "<<stringList.at(0)[0];
             result->m_RotorDataList.push_back(*pair);
         }
         step++;
@@ -322,8 +320,6 @@ Rotor *CreateReflector(QString _reflectorParam)
     int step=0;
     while (!stringList.empty())
     {
-        //qDebug()<<stringList.at(0);
-
         if (step==0)
         {
             result->name=stringList.at(0);

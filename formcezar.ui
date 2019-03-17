@@ -18,7 +18,7 @@
     <widget class="QGroupBox" name="groupBox">
      <property name="font">
       <font>
-       <pointsize>14</pointsize>
+       <pointsize>12</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>
@@ -27,11 +27,34 @@
       <string>ШИФР ЦЕЗАРЯ</string>
      </property>
      <layout class="QGridLayout" name="gridLayout_2">
-      <item row="0" column="0">
+      <item row="0" column="0" rowspan="3">
        <widget class="QTextEdit" name="openDataTextEdit"/>
       </item>
       <item row="0" column="1">
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>72</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="2" rowspan="3">
+       <widget class="QTextEdit" name="closeDataTextEdit"/>
+      </item>
+      <item row="1" column="1">
        <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;КЛЮЧ&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
         <item>
          <widget class="QSpinBox" name="spinBox">
           <property name="minimum">
@@ -39,13 +62,6 @@
           </property>
           <property name="maximum">
            <number>26</number>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="pushButton_2">
-          <property name="text">
-           <string>test</string>
           </property>
          </widget>
         </item>
@@ -59,14 +75,24 @@
            </font>
           </property>
           <property name="text">
-           <string>ШИФРОВАТ!</string>
+           <string>ШИФРОВАТЬ!</string>
           </property>
          </widget>
         </item>
        </layout>
       </item>
-      <item row="0" column="2">
-       <widget class="QTextEdit" name="closeDataTextEdit"/>
+      <item row="2" column="1">
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>71</height>
+         </size>
+        </property>
+       </spacer>
       </item>
      </layout>
     </widget>

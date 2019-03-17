@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>575</width>
-    <height>349</height>
+    <width>622</width>
+    <height>416</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -41,22 +41,16 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>575</width>
+     <width>622</width>
      <height>21</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menu">
-    <property name="title">
-     <string>меню</string>
-    </property>
-   </widget>
-   <addaction name="menu"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <property name="iconSize">
     <size>
-     <width>50</width>
-     <height>50</height>
+     <width>100</width>
+     <height>75</height>
     </size>
    </property>
    <attribute name="toolBarArea">
@@ -82,7 +76,7 @@
   <action name="action_2">
    <property name="icon">
     <iconset resource="res.qrc">
-     <normaloff>:/img/enigma.png</normaloff>:/img/enigma.png</iconset>
+     <normaloff>:/img/enigma_rotor2.png</normaloff>:/img/enigma_rotor2.png</iconset>
    </property>
    <property name="text">
     <string>энигма</string>

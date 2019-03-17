@@ -16,21 +16,6 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->stackedWidget->addWidget(cezarForm);
     ui->stackedWidget->addWidget(enigmaForm);
     ui->stackedWidget->addWidget(pubKeyForm);
-
-    QFile file("C:/Users/Pavel/Desktop/123.txt");
-    file.open(QIODevice::WriteOnly|QIODevice::Text);
-    int a=51,b=52,n=0;
-    char ch=0;
-    QChar qch=QChar(0);
-    QByteArray byteArr;
-    byteArr.append(n);
-    byteArr.append(QChar(a));
-
-    byteArr.append(QChar(b));
-    byteArr.append(ch);
-    byteArr.append(qch);
-    file.write(byteArr);
-    file.close();
 }
 
 MainWindow::~MainWindow()

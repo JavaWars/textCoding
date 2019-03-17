@@ -21,6 +21,8 @@ private slots:
 
     void on_UnShifr_PB_clicked();
 
+    void on_Shifr_PB_clicked();
+
 private:
     Ui::FormWithPublicKey *ui;
     Rsa *rsa;
